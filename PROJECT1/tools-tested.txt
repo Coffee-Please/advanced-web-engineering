@@ -1,0 +1,41 @@
+Tool: https://putsmail.com/
+
+Litmus: Website and Chrome Extension
+
+Notes:
+
+Litmus requires an account to be made to view more formats.
+The emails generated are images, so links and buttons are not interactive.
+Litmus has many useful features, checks and testing reports generated.
+There is a NVDA Screen Reader preview with a transcript, image blocking preview, accessibility audits, etc.
+Text aligned or justified center fails an accessibility audit.
+
+
+Email: Gmail, Gmail App (Android)
+On the first try, I sent the email to myself using my college email (Gmail). 
+Upon opening the email, this is what I observed:
+- The slides disappered.
+- Links and images are now unresponsive.
+- Text and columns are responsive in mobile layout.
+
+
+Email: Outlook (Windows 10)
+- The slides disappered.
+- Radio input format was off, showing "(X)()()" in place of radio buttons and striping the labels of their CSS makung them seem like plaintext.
+- Outlook 2016: Two column format is off, the image size reset pushes the second column below the first.
+- Logo CSS removed, the size and border radius has been resetted.
+
+
+Email: Outlook (macOS)
+- Image generated layout looks as expected.
+
+
+Email: Apple Mail 12, 13 Dark, 13
+- Image generated layout looks as expected.
+
+iPad, iPhone
+- Image generated layout looks as expected.
+
+Email: Yahoo, AOL Mail
+- Logo is huge. Retains styling but size was reset.
+- Default radio buttons are visible, all slides are displayed at once.
