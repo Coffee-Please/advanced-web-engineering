@@ -1,3 +1,4 @@
+# HW3 Flexbox
 Look at the index.html comments to continue adding the required rows.
 - You can change the dog theme from the example. Pick images and content of your choosing but design the same layout as in the screenshots.
 - Third row
