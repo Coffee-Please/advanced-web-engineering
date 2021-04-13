@@ -4,4 +4,4 @@ Live Site: https://comp-584-hw2ps.glitch.me  Code: https://glitch.com/edit/#!/co
 
 **Preview:**
 
-![website preview](assets/websitepreview)
+![website preview](assets/websitepreview.png)
