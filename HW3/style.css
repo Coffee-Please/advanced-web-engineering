@@ -1,0 +1,150 @@
+
+/* Border box declaration 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after
+ */
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  margin-left: 1.5em;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  margin: 1em;
+}
+
+body {
+	font-family: Arial, Geneva, sans-serif;
+  color: white;
+  background-image: url('https://cdn.glitch.com/a158f332-8d04-4402-9bb8-1b8aa10a50a1%2FWater.jpg?v=1615268047152'); 
+  background-position: center; 
+  background-attachment: fixed; /* {background-attachment: fixed;} src: https://www.w3schools.com/cssref/pr_background-attachment.asp */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+a {
+	color: #2772B0;
+}
+
+a:hover {
+	opacity: 50%;
+}
+
+.wrapper {
+	width: 97%;
+	max-width: 1200px;
+	margin: 0 auto;
+	float: none;
+}
+
+div img {
+	width: 100%;
+	max-width: 225px;
+}
+
+/* grid system -- mobile first! */
+/* flex contatiner */
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+/* attribute selector to give some margin between columns and apply styles to flex items */
+
+[class*="col-"] {
+	margin-left: 4%;
+	flex: 0 0 92%;
+  background: rgba(0, 0, 0, 0.5); /* {background: rgba(0, 0, 0, 0.5);} src: https://www.w3schools.com/howto/howto_css_image_transparent.asp */
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Add background colors to see how much space each column is taking */
+.col-6 {
+    text-align: center;
+}
+
+.center {
+  margin: 1em;
+  text-align: center;
+}
+
+.siteLogo {
+  width: 2em; 
+  float: left;
+}
+
+.centerLogo {
+ text-align: center;
+}
+
+.centerLogo img {
+ width: 5em;
+}
+
+/* Tablet Landscape Screen Sizes */
+@media only screen and (min-width: 480px)  {
+	
+  .col-1, .col-2 {
+		flex: 0 0 44%;
+	}
+  
+  .col-5a {
+		flex: 0 44%;
+    order: 2;
+	}
+   
+  .col-5b {
+    order: 1;
+	}
+
+}
+
+/* Desktop screen Sizes */
+@media only screen and (min-width: 769px) {
+  
+ 	.col-1 {
+		flex: 0 0 20%;
+	}
+  
+	.col-2 {
+		flex: 0 0 44%;
+	}
+    
+  .col-3a {
+		flex: 0 0 19%;
+	}
+
+  .col-3b {
+		flex: 0 0 69%;
+	}
+  
+  .col-5a {
+		flex: 0 0 20%;
+    order: 1;
+	}
+   
+  .col-5b {
+		flex: 0 0 44%;
+	}
+  
+  .col-6 {
+		flex: 0 0 15.2%;
+	}
+
+}
