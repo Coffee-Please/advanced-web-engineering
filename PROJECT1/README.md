@@ -1,4 +1,4 @@
-# Project Email Campaign
+# Project 1: Email Campaign
 
 - Create a new Glitch Project for this project. You can still use the structure from previous HW's 
 - Add a two column component to your email with some new content.
