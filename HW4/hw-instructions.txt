@@ -1,0 +1,29 @@
+Redo HW3 using CSS grid. Remix your previous HW to create a new Glitch Project. 
+
+HW can be done using the approach and properties used during lecture. You can also look into MDN for other properties available to the grid container and the grid items. 
+
+[x] Look at the index.html comments to continue adding the required rows.
+[x] You can change the dog theme from the example. Pick images and content of your choosing but design the same layout as in the screenshots.
+
+[x] Third row
+    [x] Desktop : 1 column wide item X 3 column wide item (See desktop.png in asset section)
+    [x] Tablet: See tablet.png in asset section
+    [x] Mobile: See mobile.png in asset section
+
+[x] Fourth row
+    [x] Desktop: 4 column wide single item
+    [x] Tablet: See tablet.png in asset section
+    [x] Mobile: See mobile.png in asset section
+
+[x] Fifth row
+    [x] Desktop: 1 column wide item X 2 column wide item X 1 column wide item
+    [x] Tablet: See tablet.png in asset section
+    [x] Mobile: See mobile.png in asset section
+    [x] Make note of the change in order of the items when window is resized. What property can you use ?
+
+[x] Sixth row 
+    [x] Your choice must be unique from the other rows.
+    [x] Some possible examples
+    [x] Make use of other flex properties found on MDN.
+    [x] Add more than 4 items per row. (Might have to re-calculate flex basis % values) 
+    
