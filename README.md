@@ -1,4 +1,4 @@
-# COMP 584 | Web Engineering 2
+# COMP 584 | Advanced Web Engineering
 
 **Course Objectives:**
 
