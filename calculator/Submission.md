@@ -4,4 +4,4 @@ Live Site: https://comp-584-proj-calcps.glitch.me Code: https://glitch.com/edit/
 
 **Preview:**
 
-![calculator preview](/assets/calculatorpreview.png)
+![calculator preview](assets/calculatorpreview.png)
