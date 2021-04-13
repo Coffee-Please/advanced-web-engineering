@@ -1,0 +1,173 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  font-family: Arial;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: solid 2px black;
+  border-radius: 0;
+}
+
+/*
+{.op} src: https://stackoverflow.com/questions/39211744/how-to-add-a-transparent-hover-state-to-a-button 
+{rgba(255, 165, 0, x)} {rgba(230, 230, 230, x)} src: https://flaviocopes.com/rgb-color-codes/
+*/
+
+button.op:hover {
+  background: rgba(255, 165, 0, 0.7);
+}
+
+button.op:active {
+  background: rgba(255, 165, 0, 0.4);
+}
+
+button.main:hover {
+  background: rgba(230, 230, 230, 0.5);
+}
+
+button.main:active {
+  background: rgba(230, 230, 230, 0.2);
+}
+
+.wrapper {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 70px 420px;  
+}
+
+/* sections */
+
+/* Calculator Screen container */
+.calculator-screen {
+  background: black;
+  color: white;
+  text-align: right;
+  font-size: 2em;
+  overflow-y: hidden;
+}
+
+/* Screen Display */
+.display {
+  margin: 0.5em;
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(5, auto);
+}
+
+/* Button CSS */
+
+.main {
+  background: rgba(230, 230, 230, 1);
+  font-size: 2em;  
+  cursor: pointer;
+}
+
+.op {
+  background: rgba(255, 165, 0, 1);
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+/* control buttons */
+
+.clear {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.backspace {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+/* operations */
+
+.divide {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.multiply {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.subtract {
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
+.add {
+  grid-column: 4/5;
+  grid-row: 4/5;
+}
+
+.equal {
+  grid-column: 4/5;
+  grid-row: 5/6;
+}
+
+/* numbers */
+
+.one {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.two {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.three {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+.four {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.five {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.six {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.seven {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.eight {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.nine {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.zero {
+  grid-column: 1/4;
+  grid-row: 5/6; 
+}
