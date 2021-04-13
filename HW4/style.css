@@ -1,0 +1,285 @@
+
+/* Border box declaration 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after
+ */
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  margin-left: 1.5em;
+  color: white;
+}
+
+h3 {
+  margin: 0.5em;
+  text-align: center;
+}
+
+p {
+  margin: 1em;
+}
+
+body {
+	font-family: Arial, Geneva, sans-serif;
+  color: white;
+  background-image: url('https://cdn.glitch.com/a158f332-8d04-4402-9bb8-1b8aa10a50a1%2FWater.jpg?v=1615268047152'); 
+  background-position: center; 
+  background-attachment: fixed; /* {background-attachment: fixed;} src: https://www.w3schools.com/cssref/pr_background-attachment.asp */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+a {
+	color: #2772B0;
+}
+
+a:hover {
+	opacity: 50%;
+}
+
+.wrapper {
+  display: grid;
+  column-gap: 4%;
+  row-gap: 0.5%;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(5, auto) auto; /* {repeat} src: https://css-tricks.com/snippets/css/complete-guide-grid/ ;; {auto} src: https://stackoverflow.com/questions/51616903/css-grid-white-space-on-the-bottom-and-how-to-remove-it */
+	width: 75%;
+	max-width: 1200px;
+	margin: 0 auto;
+	float: none;
+}
+
+div img {
+	width: 100%;
+	max-width: 225px;
+}
+
+/* grid system -- mobile first! */
+
+/* attribute selector to give some margin between columns and apply styles to flex items */
+
+[class*="col-"] {
+  background: rgba(0, 0, 0, 0.5); /* {background: rgba(0, 0, 0, 0.5);} src: https://www.w3schools.com/howto/howto_css_image_transparent.asp */
+  grid-column: 1/21;
+}
+
+[class*="col-6"] {
+    text-align: center;
+}
+
+/* Add background colors to see how much space each column is taking */
+
+.center {
+  margin: 1em;
+  text-align: center;
+}
+
+.siteTitle {
+  margin: 0 1em;
+}
+
+.siteLogo {
+  width: 2em; 
+  float: left;
+}
+
+.centerLogo {
+ text-align: center;
+}
+
+.centerLogo img {
+ width: 20vw;
+}
+
+/* Tablet Landscape Screen Sizes */
+@media only screen and (min-width: 480px)  {
+  .centerLogo img {
+    width: 10vw;
+  }
+  
+ 	.col-1a {
+    grid-column: 1/11;
+    grid-row: 1/2;
+	}
+  
+  .col-1b {
+    grid-column: 11/21;
+    grid-row: 1/2;
+	}
+  
+  .col-1c {
+    grid-column: 1/11;
+    grid-row: 2/3;
+	}
+  
+  .col-1d {
+    grid-column: 11/21;
+    grid-row: 2/3;
+	}
+  
+ 	.col-2a {
+    grid-column: 1/11;
+    grid-row: 3/4;
+	}
+  
+  .col-2b {
+    grid-column: 11/21;
+    grid-row: 3/4;
+	}
+    
+  .col-3a {
+    grid-column: 1/21;
+    grid-row: 4/5;
+	}
+
+  .col-3b {
+    grid-column: 1/21;
+    grid-row: 5/6;
+	}
+
+  .col-4a {
+    grid-column: 1/21;
+    grid-row: 6/7;
+	}
+  
+  .col-5a {
+    grid-column: 1/11;
+    grid-row: 8/9;
+	}
+   
+  .col-5b {
+    grid-column: 1/21;
+    grid-row: 7/8;
+	}
+  
+  .col-5c {
+    grid-column: 11/21;
+    grid-row: 8/9;
+	}
+  
+  .col-6a {
+    grid-column: 1/5;
+    grid-row: 9/10;
+	}
+   
+  .col-6b {
+    grid-column: 5/9;
+    grid-row: 9/10;
+	}
+  
+  .col-6c {
+    grid-column: 9/13;
+    grid-row: 9/10;
+	}
+  
+  .col-6d {
+    grid-column: 13/17;
+    grid-row: 9/10;
+	}
+  
+  .col-6e {
+    grid-column: 17/21;
+    grid-row: 9/10;
+	}
+
+}
+
+/* Desktop screen Sizes */
+@media only screen and (min-width: 769px) {
+  .centerLogo img {
+    width: 7vw;
+  }
+  
+ 	.col-1a {
+    grid-column: 1/6;
+    grid-row: 1/2;
+	}
+  
+  .col-1b {
+    grid-column: 6/11;
+    grid-row: 1/2;
+	}
+  
+  .col-1c {
+    grid-column: 11/16;
+    grid-row: 1/2;
+	}
+  
+  .col-1d {
+    grid-column: 16/21;
+    grid-row: 1/2;
+	}
+  
+ 	.col-2a {
+    grid-column: 1/11;
+    grid-row: 2/3;
+	}
+  
+  .col-2b {
+    grid-column: 11/21;
+    grid-row: 2/3;
+	}
+    
+  .col-3a {
+    grid-column: 1/6;
+    grid-row: 3/4;
+	}
+
+  .col-3b {
+    grid-column: 6/21;
+    grid-row: 3/4;
+	}
+
+  .col-4a {
+    grid-column: 1/21;
+    grid-row: 4/5;
+	}
+  
+  .col-5a {
+    grid-column: 1/6;
+    grid-row: 5/6;
+	}
+   
+  .col-5b {
+    grid-column: 6/16;
+    grid-row: 5/6;
+	}
+  
+  .col-5c {
+    grid-column: 16/21;
+    grid-row: 5/6;
+	}
+  
+  .col-6a {
+    grid-column: 1/5;
+    grid-row: 6/7;
+	}
+   
+  .col-6b {
+    grid-column: 5/9;
+    grid-row: 6/7;
+	}
+  
+  .col-6c {
+    grid-column: 9/13;
+    grid-row: 6/7;
+	}
+  
+  .col-6d {
+    grid-column: 13/17;
+    grid-row: 6/7;
+	}
+  
+  .col-6e {
+    grid-column: 17/21;
+    grid-row: 6/7;
+	}
+}
