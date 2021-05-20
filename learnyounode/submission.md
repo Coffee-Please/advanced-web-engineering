@@ -2,4 +2,4 @@
 
 Code: https://glitch.com/edit/#!/comp-584-learnyournodeps
 
-![Lesson List](assets/list.png)
+
