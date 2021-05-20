@@ -3,4 +3,14 @@ Live Site: https://comp-584ps-api.glitch.me Code: https://glitch.com/edit/#!/com
 
 Preview:
 
-![desktop.png](desktop.png)
+**Desktop View**
+
+![desktop preview](assets/desktop.png)
+
+**Weather View**
+
+![weather view preview](assets/weather.png)
+
+**Mobile View**
+
+![mobile preview](assets/mobile.png)
