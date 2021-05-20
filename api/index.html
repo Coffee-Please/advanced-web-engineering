@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>WeatherNow</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <!-- title -->
+        <h1 id="title">WeatherNow</h1>
+        <img class="star star1" src="https://cdn.glitch.com/3d597fb4-9d62-4926-8a39-45f3b7bab377%2Ftwinkle.png?v=1619493788398">
+        <img class="star star2" src="https://cdn.glitch.com/3d597fb4-9d62-4926-8a39-45f3b7bab377%2Ftwinkle.png?v=1619493788398">
+        <img class="star star3" src="https://cdn.glitch.com/3d597fb4-9d62-4926-8a39-45f3b7bab377%2Ftwinkle.png?v=1619493788398">
+      </div>
+      
+      <!-- search form -->
+      <div id="searchForm">
+        <p id="error"></p>
+        <input class="searchControl" id="searchInput" type="text" placeholder="Enter a City or Zip Code..." />
+        <br/>
+        <button class="searchControl" id="searchButton">Search</button>
+      </div>
+
+      <!-- weather details -->
+      <div id="weatherContainer">
+        <!-- left column -->
+        <div id="weatherDescription">
+          <h2 id="cityHeader"></h2>
+          <div id="weatherMain">
+            <div id="temperature"></div>
+            <div id="weatherDescriptionHeader"></div>
+            <div><img id="weatherIcon" /></div>
+          </div>
+        </div>
+        
+        <!-- right column -->
+        <div class="weatherInfo">
+          <div id="sunrise" class="bottomDetails"></div>
+          <div id="sunset" class="bottomDetails"></div>
+          <div id="windSpeed" class="bottomDetails"></div>
+          <div id="windDirection" class="bottomDetails"></div>
+          <div id="airQualityIndex" class="bottomDetails"></div>
+          <div id="visibility" class="bottomDetails"></div>
+          <div id="humidity" class="bottomDetails"></div>
+          <div id="precipitation" class="bottomDetails"></div>
+          <div id="snow" class="bottomDetails"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- import the webpage's javascript file -->
+    <script src="/weatherbit.js" defer></script>
+    <script src="/animation.js" defer></script>
+    <script src="https://unpkg.com/popmotion@8.1.24/dist/popmotion.global.min.js"></script>
+  </body>
+</html>
