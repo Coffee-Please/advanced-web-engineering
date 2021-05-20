@@ -14,10 +14,10 @@ A study of the concepts, principles, techniques, and methods of Web engineering.
 
 - HW4: CSS Grid
 
-- Project Email Campaign
+- emailCampaign: Project Email Campaign
 
-- Project Calculator
+- calculator: Project Calculator
 
-- Project API
+- api: Project API
 
-- Learn You Node
+- learnyounode: Learn You Node
